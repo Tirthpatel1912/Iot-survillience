@@ -8,7 +8,7 @@ import datetime
 
 # Flask app setup
 app = Flask(__name__)
-app.secret_key = "g38_1912"
+app.secret_key = ########
 
 # Configure folder paths
 ACCESS_FOLDER = "access_persons"  # Folder containing images of known persons
@@ -33,7 +33,7 @@ class User(UserMixin):
 
 # Dummy user data (use a database in production)
 users = {
-    "admin": User(id=1, username="admin38", password="g38123"),
+    "admin": User(id=1, username="", password=""),
 }
 
 @login_manager.user_loader
